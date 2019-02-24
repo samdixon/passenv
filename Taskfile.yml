@@ -1,0 +1,17 @@
+# https://taskfile.org
+
+version: '2'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+
+  lint:
+    cmds:
+      - black ~/Code/git-samdixon/cloudenv/cloudenv/*.py
+      - black ~/Code/git-samdixon/cloudenv/*.py
