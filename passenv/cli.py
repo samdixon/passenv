@@ -1,6 +1,6 @@
 import click
-import api
-from config import Config
+from . import api
+from .config import Config
 
 
 c = Config("1password")
