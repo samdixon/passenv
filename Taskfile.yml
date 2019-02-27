@@ -15,3 +15,7 @@ tasks:
     cmds:
       - black ~/Code/git-samdixon/cloudenv/cloudenv/*.py
       - black ~/Code/git-samdixon/cloudenv/*.py
+
+  test:
+    cmds:
+      - pytest 
